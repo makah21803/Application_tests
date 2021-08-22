@@ -1,0 +1,41 @@
+An array A consisting of N integers is given. We are looking for pairs of elements of the array that are
+equal but that occupy different positions in the array More formally, a pair of indices (PQ) is called
+identical if 0 ≤ P<0<N and AIPIAIQ). The goal is to calculate the number of identical pairs of Indices
+
+For example, consider array A such that
+
+A[0] = 3
+A[1] = 5
+A[2] = 6
+A[3] = 3
+A[4] = 3
+A[S] = 5
+
+There are four pairs of identical indices: (0, 3), (0, 4), (1, 5) and (3, 4). Note that pairs (2.2) and (5, 1)
+are not counted since their first indices are not smaller than their second.
+
+Write a function:
+    def solution (A)
+
+That, given an array A of N integers, returns the number of Identical pairs of Indices.
+
+If the number of identical pairs of indices is greater than 1,000,000,000, the function should return
+1,000,000,000
+
+For example, given:
+A[0] = 3
+A[1] = 5
+A[2] = 6
+A[3] = 3
+A[4] = 3
+A[5] = 5
+
+the function should return 4, as explained above.
+
+Write an efficient algorithm for the following assumptions:
+
+    • N is an Integer within the range 10..100,000);
+    • each element of array A in an integer within the range [-1,000,000,000..1,000,000,000].
+
+Copyright 2009-2021 by Codility Limited. All Rights Reserved.
+Unauthorized copying, publication or disclosure prohibited.
