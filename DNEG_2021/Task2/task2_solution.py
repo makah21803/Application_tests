@@ -15,12 +15,16 @@ def solution(A):
     """
     A.sort()
     count = 0
-    for i, n in enumerate(A):
-        for j in range(i + 1, len(A)):
-            if A[i] == A[j]:
-                count += 1
-            else:
-                break
+    # for i, n in enumerate(A):
+    #     for j in range(i + 1, len(A)):
+    #         if A[i] == A[j]:
+    #             count += 1
+    #         else:
+    #             break
+
+    appearance_dict = {i: A.count(i) for i in A}
+    for key in appearance_dict:
+        count += sum(i for i in range(appearance_dict[key]))
 
     return count
 
